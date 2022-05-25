@@ -12,9 +12,9 @@
       {
           $data=mysqli_fetch_assoc($Query);
 
-          $_SESSION['id']=$data['id_pengguna'];
-          $_SESSION['jenis_log']=$data['level'];
-          header("location:index.php");
+          $_SESSION['id']=$data['id_user'];
+          $_SESSION['jenis_log']=$data['nama'];
+          header("location:home.php");
       }
       else
       {
