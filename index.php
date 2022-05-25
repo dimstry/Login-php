@@ -11,7 +11,6 @@
       if(mysqli_num_rows($Query))
       {
           $data=mysqli_fetch_assoc($Query);
-
           $_SESSION['id']=$data['id_user'];
           $_SESSION['jenis_log']=$data['nama'];
           header("location:home.php");

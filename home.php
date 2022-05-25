@@ -1,5 +1,10 @@
 <?php
-$nama=$_SESSION['jenis_log'];
+  $tombol=$_POST["tombol"];
+  if ($tombol) {
+    $_SESSION['id']="";
+    $_SESSION['jenis_log']="";
+    header("location:index.php");
+  }
   echo "
   <!doctype html>
 <html lang='en'>
